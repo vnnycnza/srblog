@@ -7,21 +7,36 @@ public_folder: /assets
 
 collections:
   - name: blog
-    label: Blog
-    folder: blog
+    label: "Post"
+    folder: "posts"
     create: true
+    slug: "{{fields.date}}---{{slug}}"
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: prayer
-    label: Prayer
-    folder: prayer
+  - name: requests
+    label: "Requests"
+    folder: "requests"
     create: true
+    slug: "{{fields.date}}---{{fields.for}}"
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Prayer For", name: "for", widget: "string" }
+      - {
+          label: "Answered",
+          name: "answered",
+          widget: "boolean",
+          default: true,
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: false,
+        }
