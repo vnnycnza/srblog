@@ -29,7 +29,7 @@ export default function Header() {
           checked={theme === 'light' ? true : false}
           onChange={handleThemeToggle}
           icons={{
-            checked: '🌞',
+            checked: '☀️',
             unchecked: '🌙',
           }}
         />
