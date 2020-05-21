@@ -6,37 +6,49 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: blog
-    label: "Post"
-    folder: "posts"
+  - name: posts
+    label: 'Post'
+    folder: 'content/posts'
     create: true
-    slug: "{{fields.date}}---{{slug}}"
+    slug: '{{fields.date}}---{{slug}}'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Image", name: "image", widget: "image", required: false }
-      - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: 'Content Type',
+          name: 'type',
+          widget: 'string',
+          default: 'post',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Image', name: 'image', widget: 'image', required: false }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: requests
-    label: "Requests"
-    folder: "requests"
+    label: 'Requests'
+    folder: 'content/requests'
     create: true
-    slug: "{{fields.date}}---{{fields.for}}"
+    slug: '{{fields.date}}---{{fields.for}}'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Prayer For", name: "for", widget: "string" }
       - {
-          label: "Answered",
-          name: "answered",
-          widget: "boolean",
+          label: 'Content Type',
+          name: 'type',
+          widget: 'string',
+          default: 'request',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Prayer For', name: 'for', widget: 'string' }
+      - {
+          label: 'Answered',
+          name: 'answered',
+          widget: 'boolean',
           default: true,
         }
       - {
-          label: "Description",
-          name: "description",
-          widget: "text",
+          label: 'Description',
+          name: 'description',
+          widget: 'text',
           required: false,
         }
