@@ -9,7 +9,7 @@ module.exports = {
     title: '#SundayRegulars Blog',
     siteUrl:
       process.env.NODE_ENV === 'production'
-        ? 'https://fervent-pasteur-29a652.netlify.app'
+        ? 'https://sundayregulars.netlify.app'
         : 'http://localhost:8000',
   },
   plugins: [
