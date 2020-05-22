@@ -5,10 +5,10 @@ export default function Avatar({ name, picture }) {
     <div className="flex items-center">
       <img
         src={picture}
-        className="w-16 h-16 rounded-full mr-4 object-cover"
+        className="w-20 h-20 md:w-24 md:h-24 rounded-full mr-4 object-cover"
         alt={name}
       />
-      <div className="text-lg">{name}</div>
+      <div className="text-xl md:text-2xl">{name}</div>
     </div>
   );
 }

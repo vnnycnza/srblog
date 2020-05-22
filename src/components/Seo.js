@@ -40,7 +40,7 @@ export default function Seo({
   return (
     <Helmet
       htmlAttributes={{ lang }}
-      title={title}
+      title={site.siteMetadata.title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       link={
         canonical
@@ -71,11 +71,11 @@ export default function Seo({
         },
         {
           property: 'og:type',
-          content: `website`,
+          content: 'website',
         },
         {
           name: 'twitter:title',
-          content: title,
+          content: metaTitle,
         },
         {
           name: 'twitter:description',
@@ -90,14 +90,6 @@ export default function Seo({
                   content: image,
                 },
                 {
-                  property: 'og:image:width',
-                  content: metaImage.width,
-                },
-                {
-                  property: 'og:image:height',
-                  content: metaImage.height,
-                },
-                {
                   name: 'twitter:card',
                   content: 'summary_large_image',
                 },
@@ -110,7 +102,7 @@ export default function Seo({
               ],
         )
         .concat(meta)}
-    />
+    ></Helmet>
   );
 }
 
