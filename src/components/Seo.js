@@ -83,7 +83,7 @@ export default function Seo({
         },
       ]
         .concat(
-          metaImage
+          image
             ? [
                 {
                   property: 'og:image',
