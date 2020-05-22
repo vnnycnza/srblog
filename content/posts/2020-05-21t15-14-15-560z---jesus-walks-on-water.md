@@ -2,7 +2,7 @@
 type: post
 title: Jesus Walks On Water
 author: Bogs
-date: 2020-05-21T15:14:15.560Z
+date: 2020-05-02T13:30:00.000Z
 image: /assets/05022020.jpg
 slug: jesus-walks-on-water
 ---
