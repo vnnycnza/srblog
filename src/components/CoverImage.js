@@ -1,14 +1,21 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 
-export default function CoverImage({ title, src, slug }) {
-  const image = (
-    <img
-      src={src}
+export default function CoverImage({ title, slug, image }) {
+  const img = (
+    <Img
+      fixed={image.childImageSharp.fixed}
       alt={`Cover for ${title}`}
-      className="hover:shadow-medium transition-shadow duration-200 h-64 w-full object-cover"
+      style={{ width: '100%', display: 'flex' }}
+      imgStyle={{ alignSelf: 'center' }}
+      className="hover:shadow-medium transition-shadow duration-200 object-cover"
     />
   );
 
-  return <div>{slug ? <Link to={`/posts/${slug}`}>{image}</Link> : image}</div>;
+  return (
+    <div className="container">
+      {slug ? <Link to={`/posts/${slug}`}>{img}</Link> : img}
+    </div>
+  );
 }

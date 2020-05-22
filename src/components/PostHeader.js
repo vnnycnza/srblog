@@ -10,8 +10,8 @@ export default function PostHeader({ title, image, date, author }) {
         {title}
       </div>
       <div className="mb-6 text-lg">{date}</div>
-      <div className="mb-8 md:mb-16 -mx-5 mx-0">
-        <FeaturedImage title={title} src={image} />
+      <div className="container mb-8 md:mb-16">
+        <FeaturedImage title={title} image={image} />
       </div>
       <div className="max-w-2xl mb-10 sm:mx-auto">
         <div className="block">

@@ -7,12 +7,30 @@
 module.exports = {
   siteMetadata: {
     title: '#SundayRegulars Blog',
+    description: 'A repository of our fellowships',
+    author: '@vnnycnza',
+    keywords: ['blog', 'christianity', 'fellowship', 'church'],
     siteUrl:
       process.env.NODE_ENV === 'production'
         ? 'https://sundayregulars.netlify.app'
         : 'http://localhost:8000',
   },
   plugins: [
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images',
+          },
+          {
+            resolve: 'gatsby-remark-images',
+          },
+        ],
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -27,7 +45,6 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-plugin-postcss',
       options: {

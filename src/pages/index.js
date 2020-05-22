@@ -1,4 +1,5 @@
 import React from 'react';
+import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Container from '../components/Container';
 import PostsGrid from '../components/PostsGrid';
@@ -20,7 +21,13 @@ const IndexPage = () => {
               type
               title
               slug
-              image
+              image {
+                childImageSharp {
+                  fixed(width: 500) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
               date(formatString: "MMMM DD, YYYY")
             }
           }
@@ -46,9 +53,12 @@ const IndexPage = () => {
   );
 
   return (
-    <Layout>
-      <Container>{display}</Container>
-    </Layout>
+    <>
+      <Seo />
+      <Layout>
+        <Container>{display}</Container>
+      </Layout>
+    </>
   );
 };
 

@@ -1,33 +1,46 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import useSiteMetadata from '../hooks/useSiteMetadata';
-import PostLayout from '../components/PostLayout';
+import Layout from '../components/Layout';
 import PostHeader from '../components/PostHeader';
 import PostBody from '../components/PostBody';
+import Seo from '../components/Seo';
+import Share from '../components/Share';
+
+import useSiteMetadata from '../hooks/useSiteMetadata';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const { siteUrl } = useSiteMetadata();
+  const { siteUrl, title } = useSiteMetadata();
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
-  const imageUrl = `${siteUrl}/${frontmatter.image}`;
   const authorDetails = {
     name: frontmatter.author,
     photo: `${siteUrl}/assets/dp/${frontmatter.author.toLowerCase()}.jpg`,
   };
 
   return (
-    <PostLayout>
-      <PostHeader
+    <>
+      <Seo
         title={frontmatter.title}
-        author={authorDetails}
-        image={imageUrl}
-        date={frontmatter.date}
+        description={`An entry from ${title}`}
+        image={frontmatter.image}
       />
-      <PostBody body={html} />
-    </PostLayout>
+      <Layout>
+        <PostHeader
+          title={frontmatter.title}
+          author={authorDetails}
+          image={frontmatter.image}
+          date={frontmatter.date}
+        />
+        <PostBody body={html} />
+        <Share
+          url={`${siteUrl}/${frontmatter.slug}`}
+          title={frontmatter.title}
+        />
+      </Layout>
+    </>
   );
 }
 
@@ -40,7 +53,13 @@ export const pageQuery = graphql`
         slug
         title
         author
-        image
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

@@ -1,13 +1,16 @@
 import React from 'react';
+import Img from 'gatsby-image';
 
-export default function FeaturedImage({ title, src }) {
-  const image = (
-    <img
-      src={src}
+export default function FeaturedImage({ title, image }) {
+  const img = (
+    <Img
+      fluid={image.childImageSharp.fluid}
       alt={`Featured for ${title}`}
-      className="hover:shadow-medium transition-shadow duration-200 object-cover"
+      style={{ width: '100%' }}
+      imgStyle={{ objectFit: 'contain' }}
+      className="hover:shadow-medium transition-shadow duration-200 object-fit"
     />
   );
 
-  return <div className="md:flex-shrink-0">{image}</div>;
+  return <div className="flex-shrink">{img}</div>;
 }

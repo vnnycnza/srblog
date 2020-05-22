@@ -2,15 +2,18 @@ import React, { useContext } from 'react';
 import { Helmet } from 'react-helmet';
 
 import Header from './Header';
+import HeaderMin from './Header-Min';
 import Footer from './Footer';
 import Container from './Container';
+import Seo from './Seo';
 
+import { useLocation } from '@reach/router';
 import { ThemeContext } from '../context/theme';
-import useSiteMetadata from '../hooks/useSiteMetadata';
 
 export default function Layout({ children }) {
   const { theme } = useContext(ThemeContext);
-  const { title } = useSiteMetadata();
+  const { pathname } = useLocation();
+  const header = pathname === '/' ? <Header></Header> : <HeaderMin></HeaderMin>;
 
   return (
     <div
@@ -18,9 +21,8 @@ export default function Layout({ children }) {
         theme === 'light' ? 'theme-light' : 'theme-dark'
       } bg-primary text-main-text text-center transition-all duration-300`}
     >
-      <Helmet title={title} />
       <Container>
-        <Header />
+        {header}
         <div className="min-h-screen">
           <main>{children}</main>
         </div>
