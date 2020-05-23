@@ -31,6 +31,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-react-head',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

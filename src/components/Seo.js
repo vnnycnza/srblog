@@ -1,12 +1,11 @@
 import get from 'lodash/get';
 import React from 'react';
-import { HeadProvider, Title, Link, Meta } from 'react-head';
+import { Title, Link, Meta } from 'react-head';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // https://www.gatsbyjs.org/tutorial/seo-and-social-sharing-cards-tutorial/
 export default function Seo({
   description,
-
   image: metaImage,
   title,
   pathname,
@@ -39,10 +38,10 @@ export default function Seo({
     : `${site.siteMetadata.siteUrl}/assets/default.jpg`;
 
   return (
-    <HeadProvider>
+    <>
       <Title>{`${siteTitle} | ${metaTitle}`}</Title>
       <Link rel="canonical" content={canonical} />
-      <Meta name="description" content={description} />
+      <Meta name="description" content={metaDescription} />
       <Meta name="keywords" content={site.siteMetadata.keywords.join(',')} />
       <Meta
         property="og:title"
@@ -54,12 +53,6 @@ export default function Seo({
       <Meta property="og:image" content={image} />
       <Meta property="og:url" content={canonical} />
       <Meta name="twitter:card" content="summary_large_image" />
-    </HeadProvider>
+    </>
   );
 }
-
-Seo.defaultProps = {
-  lang: 'en',
-  meta: [],
-  description: '',
-};
