@@ -1,13 +1,12 @@
 import get from 'lodash/get';
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { HeadProvider, Title, Link, Meta } from 'react-head';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // https://www.gatsbyjs.org/tutorial/seo-and-social-sharing-cards-tutorial/
 export default function Seo({
   description,
-  lang,
-  meta,
+
   image: metaImage,
   title,
   pathname,
@@ -28,81 +27,34 @@ export default function Seo({
     `,
   );
 
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
-  const metaTitle = title || site.siteMetadata.title;
+  const canonical = pathname
+    ? `${site.siteMetadata.siteUrl}/${pathname}`
+    : `${site.siteMetadata.siteUrl}`;
+  const siteTitle = site.siteMetadata.title;
+  const metaTitle = title || 'Home';
   const metaDescription = description || site.siteMetadata.description;
   const imageSource = get(metaImage, 'childImageSharp.fluid', null);
-
   const image = imageSource
     ? `${site.siteMetadata.siteUrl}${imageSource.src}`
-    : null;
+    : `${site.siteMetadata.siteUrl}/assets/default.jpg`;
 
   return (
-    <Helmet
-      htmlAttributes={{ lang }}
-      title={site.siteMetadata.title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      link={
-        canonical
-          ? [
-              {
-                rel: 'canonical',
-                href: canonical,
-              },
-            ]
-          : []
-      }
-      meta={[
-        {
-          name: 'description',
-          content: metaDescription,
-        },
-        {
-          name: 'keywords',
-          content: site.siteMetadata.keywords.join(','),
-        },
-        {
-          property: 'og:title',
-          content: metaTitle,
-        },
-        {
-          property: 'og:description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:type',
-          content: 'website',
-        },
-        {
-          name: 'twitter:title',
-          content: metaTitle,
-        },
-        {
-          name: 'twitter:description',
-          content: metaDescription,
-        },
-      ]
-        .concat(
-          image
-            ? [
-                {
-                  property: 'og:image',
-                  content: image,
-                },
-                {
-                  name: 'twitter:card',
-                  content: 'summary_large_image',
-                },
-              ]
-            : [
-                {
-                  name: 'twitter:card',
-                  content: 'summary',
-                },
-              ],
-        )
-        .concat(meta)}
-    ></Helmet>
+    <HeadProvider>
+      <Title>{`${siteTitle} | ${metaTitle}`}</Title>
+      <Link rel="canonical" content={canonical} />
+      <Meta name="description" content={description} />
+      <Meta name="keywords" content={site.siteMetadata.keywords.join(',')} />
+      <Meta
+        property="og:title"
+        content={metaTitle === 'Home' ? `${siteTitle}` : `${metaTitle}`}
+      />
+      <Meta property="og:description" content={metaDescription} />
+      <Meta property="og:type" content={canonical ? 'article' : 'website'} />
+      <Meta property="og:site_name" content={site.siteMetadata.title} />
+      <Meta property="og:image" content={image} />
+      <Meta property="og:url" content={canonical} />
+      <Meta name="twitter:card" content="summary_large_image" />
+    </HeadProvider>
   );
 }
 

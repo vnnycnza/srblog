@@ -26,6 +26,7 @@ export default function Template({
         title={frontmatter.title}
         description={`An entry from ${title}`}
         image={frontmatter.image}
+        pathname={frontmatter.slug}
       />
       <Layout>
         <PostHeader
