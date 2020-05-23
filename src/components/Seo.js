@@ -27,7 +27,7 @@ export default function Seo({
   );
 
   const canonical = pathname
-    ? `${site.siteMetadata.siteUrl}/${pathname}`
+    ? `${site.siteMetadata.siteUrl}/posts/${pathname}`
     : `${site.siteMetadata.siteUrl}`;
   const siteTitle = site.siteMetadata.title;
   const metaTitle = title || 'Home';
@@ -43,10 +43,7 @@ export default function Seo({
       <Link rel="canonical" content={canonical} />
       <Meta name="description" content={metaDescription} />
       <Meta name="keywords" content={site.siteMetadata.keywords.join(',')} />
-      <Meta
-        property="og:title"
-        content={metaTitle === 'Home' ? `${siteTitle}` : `${metaTitle}`}
-      />
+      <Meta property="og:title" content={`${siteTitle} | ${metaTitle}`} />
       <Meta property="og:description" content={metaDescription} />
       <Meta property="og:type" content={canonical ? 'article' : 'website'} />
       <Meta property="og:site_name" content={site.siteMetadata.title} />
