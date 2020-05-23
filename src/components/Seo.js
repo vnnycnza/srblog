@@ -43,12 +43,14 @@ export default function Seo({
       <Link rel="canonical" content={canonical} />
       <Meta name="description" content={metaDescription} />
       <Meta name="keywords" content={site.siteMetadata.keywords.join(',')} />
-      <Meta property="og:title" content={`${siteTitle} | ${metaTitle}`} />
+      <Meta property="og:title" content={metaTitle} />
       <Meta property="og:description" content={metaDescription} />
       <Meta property="og:type" content={canonical ? 'article' : 'website'} />
       <Meta property="og:site_name" content={site.siteMetadata.title} />
       <Meta property="og:image" content={image} />
       <Meta property="og:url" content={canonical} />
+      <Meta name="twitter:title" content={metaTitle} />
+      <Meta name="twitter:description" content={metaDescription} />
       <Meta name="twitter:card" content="summary_large_image" />
     </>
   );
