@@ -37,7 +37,7 @@ export default function Template({
         />
         <PostBody body={html} />
         <Share
-          url={`${siteUrl}/${frontmatter.slug}`}
+          url={`${siteUrl}/posts/${frontmatter.slug}`}
           title={frontmatter.title}
         />
       </Layout>
