@@ -35,7 +35,7 @@ export default function Seo({
   const imageSource = get(metaImage, 'childImageSharp.fluid', null);
   const image = imageSource
     ? `${site.siteMetadata.siteUrl}${imageSource.src}`
-    : `${site.siteMetadata.siteUrl}/assets/default.jpg`;
+    : `${site.siteMetadata.siteUrl}/assets/cover.jpg`;
 
   return (
     <>
