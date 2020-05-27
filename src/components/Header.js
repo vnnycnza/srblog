@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <section className="flex-col md:flex-row flex items-center sm:justify-between mb-10 sm:mb-20 bg-accent-1 border-b border-accent-2 pt-16 pb-4">
+    <section className="flex-col md:flex-row flex items-center sm:justify-between bg-accent-1 border-b border-accent-2 pt-16 pb-4">
       <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
         <Link to="/">
           <p className="hover:underline"> #SundayRegulars. </p>

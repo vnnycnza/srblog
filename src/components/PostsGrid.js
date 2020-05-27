@@ -4,7 +4,7 @@ import PostPreview from './PostPreview';
 
 export default function PostsGrid({ posts }) {
   return (
-    <section className="flex-col flex-auto items-center md:flex-row">
+    <section className="flex-col flex-auto items-center md:flex-row mt-10 sm:mt-20">
       <div className="grid grid-cols-1 row-gap-5 mb-5 sm:mb-32 sm:grid-cols-2 sm:col-gap-16 sm:row-gap-32 lg:col-gap-32">
         {posts.map(post => (
           <PostPreview

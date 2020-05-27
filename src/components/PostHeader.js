@@ -5,7 +5,7 @@ import FeaturedImage from './FeaturedImage';
 
 export default function PostHeader({ title, image, date, author }) {
   return (
-    <section className="flex-col flex items-start">
+    <section className="flex-col flex items-start mt-6 sm:mt-10">
       <div className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none text-left sm:mb-2">
         {title}
       </div>
