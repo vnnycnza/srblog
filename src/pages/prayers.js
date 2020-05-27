@@ -22,7 +22,6 @@ const PrayersPage = () => {
               date(formatString: "MMMM DD, YYYY")
               for
               answered
-              description
             }
           }
         }
@@ -31,7 +30,7 @@ const PrayersPage = () => {
   `);
 
   const requests = data.allMarkdownRemark.edges
-    .filter(edge => edge.node.frontmatter.type === 'requests')
+    .filter(edge => edge.node.frontmatter.type === 'request')
     .map(p => ({
       title: p.node.frontmatter.title,
       for: p.node.frontmatter.for,
