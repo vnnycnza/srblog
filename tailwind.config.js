@@ -33,6 +33,16 @@ module.exports = {
     minWidth: {
       '500': '500px',
     },
+    minHeight: {
+      '0': '0',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      full: '100%',
+      screen: '100vh',
+      '60-vh': '60vh',
+      '65-vh': '65vh',
+    },
     fontSize: {
       xs: '.75rem',
       sm: '.875rem',

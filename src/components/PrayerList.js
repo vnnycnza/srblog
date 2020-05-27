@@ -13,12 +13,12 @@ export default function PrayerList({ requests }) {
         >
           <img
             className="h-16 w-16 rounded-full object-cover object-center inline"
-            src={`assets/dp/${key}.jpg`}
+            src={`/assets/dp/${key}.jpg`}
           />
           <div className="text-base text-center capitalize mb-1">{key}</div>
           <ul class="list-inside list-disc">
             {list[`${key}`].map(l => (
-              <li className="text-xs text-left capitalize">{l.title}</li>
+              <li className="text-xs text-left">{l.title}</li>
             ))}
           </ul>
         </div>
