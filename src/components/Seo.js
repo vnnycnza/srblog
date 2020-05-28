@@ -27,7 +27,7 @@ export default function Seo({
   );
 
   const canonical = pathname
-    ? `${site.siteMetadata.siteUrl}/posts/${pathname}/`
+    ? `${site.siteMetadata.siteUrl}${pathname}/`
     : `${site.siteMetadata.siteUrl}`;
   const siteTitle = site.siteMetadata.title;
   const metaTitle = title || 'Home';

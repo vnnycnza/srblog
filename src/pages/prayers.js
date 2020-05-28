@@ -41,7 +41,7 @@ const PrayersPage = () => {
 
   return (
     <>
-      <Seo />
+      <Seo title={'Prayers'} pathname={`/prayers`} />
       <Layout>
         <Count requests={requests} />
       </Layout>
