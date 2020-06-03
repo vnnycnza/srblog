@@ -4,7 +4,7 @@ title: Prepare the Way for the Lord
 author: Joche
 date: 2020-05-30T13:30:00.000Z
 image: /assets/05302020.jpg
-slug: prepare-the-way-of-the-lord
+slug: prepare-the-way-for-the-lord
 ---
 
 > "Now in those days John the Baptist came, preaching in the wilderness of Judea, saying, *'Repent, for the kingdom of heaven is at hand.'* For this is the one referred to by Isaiah the prophet when he said,
