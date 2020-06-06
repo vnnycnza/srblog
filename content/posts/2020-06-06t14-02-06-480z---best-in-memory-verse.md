@@ -1,7 +1,7 @@
 ---
 type: post
 title: Best in Memory Verse
-author: amay
+author: Amay
 date: 2020-06-06T14:02:06.480Z
 image: /assets/06062020.png
 slug: best-in-memory-verse
@@ -24,7 +24,7 @@ Bible memorization has the effect of making our gaze on Jesus steadier and clear
 
 > *"And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from the Lord who is the Spirit."* **~ 2 Corinthians 3:18**
 
-> *"And the Lord appeared again at Shiloh, for the Lord revealed himself to Samuel at Shiloh **by the word** of the Lord."* **~ 1 Samuel 3:21**
+> *"And the Lord appeared again at Shiloh, for the Lord revealed himself to Samuel at Shiloh by the word of the Lord."* **~ 1 Samuel 3:21**
 
 ### II. Constant Meditation on God’s Word
 When we have the Scriptures hidden in our hearts, if we are regularly reviewing and learning them, we make the truth of Scripture available to our minds all throughout the day.
@@ -66,7 +66,8 @@ The verses of the Bible have their own penetrating power
 
 ### IV. Communion with God 
 
-- Bringing God’s Word into connection with our minds to enjoy His person and His ways
+- Bringing God’s Word into connection with our minds to enjoy His person and His ways.
+
 - Memorizing the Scripture makes this connection more constant, more deep, and more transforming.
 
 > *"So faith comes from hearing, and hearing through the word of Christ."* **~ Romans 10:17**
