@@ -49,12 +49,13 @@ Romans 8:13**
 - The god of this world is a liar, and memorizing Scripture guards out mind and helps us detect errors.
 
 > *Again, the devil took him to a very high mountain and showed him all the kingdoms of the world and their glory. And he said to him, “All these I will give you, if you will fall down and worship me.” Then Jesus said to him, “Be gone, Satan! For it is written,*
+
 > > *“‘You shall worship the Lord your God and him only shall you serve.’”* **~ Matthew 4:8-10**
 
 #### Comfort and Counsel People you Love
 - The very Word of God spoken from the heart has unusual power
 
-> *"A word **fitly** spoken is like apples of gold in a setting of silver."* ** ~ Proverbs 25:11**
+> *"A word fitly spoken is like apples of gold in a setting of silver."* **~ Proverbs 25:11**
 
 #### Communicate the Gospel to Unbelievers
 The verses of the Bible have their own penetrating power
