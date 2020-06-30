@@ -81,7 +81,7 @@ Tonight, we talk about the story on the disagreement between Paul and Barnabas a
 
 > - This event occurred in the Garden of Gethsemane the night Jesus was betrayed and captured. When Jesus was seized by the Roman soldiers, the young man escaped capture and ran, leaving the garment behind. The identity of the man is unknown, but since the Gospel of Mark is the only gospel that mentions the incident, many Bible scholars speculate that the young man was John Mark himself, the author of the Gospel of Mark.
 
-### What can we learned from these 4 characters in the story?
+### What can we learn from these 4 characters in the story?
 
 Paul is a very bold and outspoken person. Meanwhile, Barnabas is depicted as an encourager, which is both his strength and also his weakness. In Galatians 2:11-16, he was led astray by hypocrisy. 
 
