@@ -11,7 +11,9 @@ slug: seeing-and-savoring-jesus-christ
 
 > *"having the eyes of your hearts enlightened, that you may know what is the hope to which he has called you, what are the riches of his glorious inheritance in the saints"* **~ Ephesians 1:28 ESV**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ViBNqNukgzE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-wrapper">
+<iframe src="https://www.youtube.com/embed/ViBNqNukgzE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 - When we see with our spiritual eyes, we see the **truth** and **beauty** and **value** of Jesus Christ for what they really are.
 
@@ -71,9 +73,9 @@ slug: seeing-and-savoring-jesus-christ
 ### Christ is our reward
 - Jesus himself, and all that God is for us in him, is our great reward, nothing less.
 
-<!-- blank line -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/teUxQpnhezY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<!-- blank line -->
+<div class="youtube-wrapper">
+<iframe src="https://www.youtube.com/embed/teUxQpnhezY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-wrapper">
 
 > *"Jesus said to them, “I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst”"* **~ John 6:35 ESV**
 
