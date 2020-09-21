@@ -1,7 +1,7 @@
 ---
 type: post
 title: Seeing and Savoring Jesus Christ
-author: amay
+author: Amay
 date: 2020-08-23T13:00:00.000Z
 image: /assets/08232020.jpg
 slug: seeing-and-savoring-jesus-christ
