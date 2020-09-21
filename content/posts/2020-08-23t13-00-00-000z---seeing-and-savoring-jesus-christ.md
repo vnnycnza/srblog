@@ -75,7 +75,7 @@ slug: seeing-and-savoring-jesus-christ
 
 <div class="youtube-wrapper">
 <iframe src="https://www.youtube.com/embed/teUxQpnhezY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="youtube-wrapper">
+</div>
 
 > *"Jesus said to them, “I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst”"* **~ John 6:35 ESV**
 
