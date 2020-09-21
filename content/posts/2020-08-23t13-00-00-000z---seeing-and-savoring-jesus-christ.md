@@ -59,7 +59,7 @@ slug: seeing-and-savoring-jesus-christ
 > *"I am the Alpha and the Omega, the first and the last, the beginning and the end."* **~ Revelation 22:13 ESV**
 
 - Jesus is I AM
-> *"Jesus said to them, “Truly, truly, I say to you, before Abraham was, I am.”"* **~ John 5:58 ESV **
+> *"Jesus said to them, “Truly, truly, I say to you, before Abraham was, I am.”"* **~ John 5:58 ESV**
 
 ### Seeing and savoring this glory is the goal of our salvation
 ![goal](https://media.giphy.com/media/tjOqm4ByG4AwM/giphy.gif)
