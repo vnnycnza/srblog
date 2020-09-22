@@ -4,7 +4,7 @@ title: The Principle of Vision
 author: Jedi
 date: 2020-09-05T13:00:00.000Z
 image: /assets/09052020.jpg
-slug: principle-of-vision
+slug: the-principle-of-vision
 ---
 
 > ### Where there is no vision, the people perish. - Proverbs 29:18 KJV
