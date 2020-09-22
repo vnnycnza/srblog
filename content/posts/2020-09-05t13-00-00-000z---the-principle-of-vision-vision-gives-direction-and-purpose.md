@@ -1,6 +1,6 @@
 ---
 type: post
-title: "The Principle of Vision: Vision Gives Direction and Purpose"
+title: The Principle of Vision
 author: Jedi
 date: 2020-09-05T13:00:00.000Z
 image: /assets/09052020.jpg
