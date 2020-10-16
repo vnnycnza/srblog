@@ -122,9 +122,8 @@ The other way to view this is the present, seeing God while we're still here on 
 
 ### Let us allow God to search our hearts and allow Him to purify us from all impurities.
 
-<div class="youtube-wrapper">
 <iframe src="https://open.spotify.com/embed/track/40q0zi9i9YdCqrZDfALRDR" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</div>
+
 
 
 
