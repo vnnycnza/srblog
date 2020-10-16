@@ -4,7 +4,7 @@ title: Maximize God's Time
 author: Jodie
 date: 2020-08-15T14:30:00.000Z
 image: /assets/08152020.jpg
-slug: maximize-gods-time
+slug: maximize-god's-time
 ---
 To know how we can maximize God’s time, we must first know the value of Time.
 
