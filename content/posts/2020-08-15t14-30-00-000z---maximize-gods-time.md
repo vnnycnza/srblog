@@ -140,8 +140,9 @@ We need each other to maintain the balance in managing our time. You can never d
 
 - Find peace, joy, and purpose in the ways in which you invest your time today.
 
+## Thanks for joining our Hoodie Night! 🎉
 
-
+![hoodies](/assets/08152020a.jpg)
 
 
 
