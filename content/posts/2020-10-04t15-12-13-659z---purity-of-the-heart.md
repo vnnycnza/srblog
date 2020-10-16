@@ -84,7 +84,7 @@ The other way to view this is the present, seeing God while we're still here on 
 
 #### Jesus used this to emphasize that seeing God is more than merely speaking of physical sight, it conveys the idea of perception, discernment and understanding.
 
-![perspective](http://www.quickmeme.com/img/9e/9eaa34272b808c04437b60f92f3edd940e3ac00468d33fe333669aab2975b733.jpg)
+![perspective](https://media.giphy.com/media/5kFoWCE4XcNYFnuP5p/giphy.gif)
 
 - The way we see things changes perspective. The things we cannot fathom on our own are being revealed to us. And our understanding of who He is deepens.
 
